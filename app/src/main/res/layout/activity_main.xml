@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="gangsofcoder.busapplication.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location Details"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Latitude"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30sp"
+            android:background="@color/cast_expanded_controller_ad_label_background_color"
+            android:text="Setting"
+            android:textDirection="anyRtl"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnShowAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSetting"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Show Address"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvShowAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnShowAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:textSize="15sp"
+            tools:text="Address will be shown here" />
+    </RelativeLayout>
+</LinearLayout>
